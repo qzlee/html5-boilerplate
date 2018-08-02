@@ -264,13 +264,20 @@ textarea {
         page-break-inside: avoid;
     }
 
+    /*
+     * orphan : set the paragraph-opening line that appear at the bottom of page/column
+     * widows : specified the minimum number of line in a block container
+     */
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
+    
+    /*
+     * avoid to insert page break after a specified element
+     */
     h2,
     h3 {
         page-break-after: avoid;
